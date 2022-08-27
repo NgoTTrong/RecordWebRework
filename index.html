@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/42373129c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Recorder</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>SCREEN RECORDER</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <div class="choose">
+                <div class="audioChoose">
+                    <input type="checkbox" id="audio" name="audio" value="audio" checked>
+                    <label for="audio">Record with audio</label>
+                </div>
+                <div class="voiceChoose">
+                    <input type="checkbox" id="voice" name="voice" value="voice">
+                    <label for="voice">Record with voice</label>
+                </div>
+            </div>
+            <div class="recording-video-wrap">
+                <h2>Recording Screen</h2>
+                <video src="" class="videoScreen" muted></video>
+                <div class="button">
+                    <button class="startButton">Start Recording</button>
+                    <button class="stopButton" disabled>Stop Recording</button>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="recorded-video-wrap" hidden>
+            <h2>Recorded Video</h2>
+            <video src="" class="recordedVideo" controls></video>
+            <div class="dlButton">
+                <button><a href="" class="downloadButton">Click here to Download video</a></button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <a href="/">
+            <i class="fas fa-home"></i>
+            <p>Home</p>
+        </a> 
+        <a href="https://www.facebook.com/trong.ngo.33633344" target="_blank">
+                <i class="fab fa-facebook"></i>
+                <p>Facebook</p>
+        </a>
+        <a href="https://github.com/NgoTTrong" target="_blank">
+                <i class="fab fa-github"></i>
+                <p>Github</p>
+        </a> 
+        <a href="">
+                <i class="fas fa-envelope"></i>
+                <p>trong.ngo08082002@hcmut.edu.vn</p>
+        </a>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
